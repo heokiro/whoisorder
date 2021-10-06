@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { useState, useEffect } from 'react';
 import './App.css';
 import {
@@ -12,16 +11,28 @@ import End from './pages/End';
 
 function App() {
   const [header, setHeader] = useState(true);
-  const [result, setResult] = useState(true)
-
+  // header = who is older
+  const [result, setResult] = useState(true);
+  // headerresult = great, cheer up
+  const [score, setScore] = useState(0)
   return (
     <Router>
       <Switch>
-        <Route path='/'>
-          <Main header={header} setHeader={setHeader} result={result} setResult={setResult}/>
+        <Route exact path='/'>
+          <Main 
+            header={header} 
+            setHeader={setHeader} 
+            result={result} 
+            setResult={setResult}/>
         </Route>
         <Route path='/play'>
-          <Play header={header} setHeader={setHeader} result={result} setResult={setResult}/>
+          <Play 
+            header={header} 
+            setHeader={setHeader} 
+            result={result} 
+            setResult={setResult}
+            score={score}
+            setScore={setScore} />
         </Route>
         <Route path='/end'>
           <End />

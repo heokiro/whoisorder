@@ -3,12 +3,12 @@ const dummydata = [
         id: 1,
         name: 'TAEYEON',
         birth: 1989,
-        image: 'taeyeon.png',
+        image: '../../taeyeon.png',
     },
     {  id: 2,
        name: 'JENNIFER LAWRENCE',
        birth: 1990,
-       image: 'jenniferlawrent.png',
+       image: '../../jenniferlawrence.png',
     },
     {
        id: 3,
@@ -25,7 +25,7 @@ const dummydata = [
     {
         id : 5,
         name: 'Emilly Blunt',
-        birth: 1983
+        birth: 1983,
         image: 'emilly.jpeg',
     },
     {

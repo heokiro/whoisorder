@@ -10,6 +10,7 @@ function Main({ header, setHeader }) {
         <Header header={header} setHeader={setHeader} />
       </div>
       <div>
+        <img src="../../main.png" />
 
       </div>
       <div>
