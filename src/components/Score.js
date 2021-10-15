@@ -1,16 +1,11 @@
-import React from 'react'
+import React from "react";
 
-function Score({score}) {
-
+function Score({ score }) {
   return (
     <>
-    <div>
-        {score}
-    </div>
-
-  
-   </>
-  )
+      <div>{score}</div>
+    </>
+  );
 }
 
 export default Score;
