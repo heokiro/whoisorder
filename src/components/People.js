@@ -1,17 +1,14 @@
-import React from 'react'
-import PeopleBirth from './PeopleBirth';
+import React from "react";
+import PeopleBirth from "./PeopleBirth";
 
-function People({name, image, birth, header}) {
-
+function People({ name, image, birth, header, handlePeopleClick }) {
   return (
-    <>
-     <img src ={image} />
-     <PeopleBirth 
-        birth={birth}
-        header={header}  />
-     <div>{name}</div> 
-     </>
-  )
+    <div>
+      {header ? <img src={image} onClick={handlePeopleClick} /> : <img src={image} /> }
+      {header ? "" : <PeopleBirth birth={birth} />}
+      <div className='name'>{name}</div>
+    </div>
+  );
 }
 
 export default People;
